@@ -26,6 +26,7 @@
     <style type="text/css">
       body {
         font-family: "Poppins", sans-serif;
+        background-color: whitesmoke;
       }
       section {
         padding: 60px 0;
@@ -40,7 +41,8 @@
       h6 {
         font-weight: 700;
       }
-      p {
+      p,
+      #skills ul li {
         font-size: 18px;
       }
 
@@ -72,13 +74,26 @@
         outline: none;
         box-shadow: none;
       }
+      .navbar {
+        background-color: #121212 !important;
+      }
+
+      .nav-link {
+        color: #fff;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: #121212;
+        background-color: #fff;
+      }
     </style>
   </head>
   <body>
     <header class="container">
-      <nav id="#" class="navbar navbar-expand-lg bg-white fixed-top">
+      <nav id="#" class="navbar navbar-expand-lg bg-dark text-white fixed-top">
         <div class="container-fluid px-lg-5">
-          <a class="navbar-brand" href="#">Nneka Ofodum</a>
+          <a class="navbar-brand text-white" href="#about">Nneka Ofodum</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -90,11 +105,18 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div id="navbarCollapse" class="collapse navbar-collapse text-dark">
+          <div id="navbarCollapse" class="collapse navbar-collapse text-white">
             <ul
-              class="bg-white border border-white rounded-pill navbar-nav justify-content-evenly mb-2 mb-lg-0 text-dark w-100"
+              class="text-white navbar-nav justify-content-evenly mb-2 mb-lg-0 text-dark w-100"
             >
-              <li class="nav-item"><a class="nav-link" href="#">Resume </a></li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about"
+                  >Resume
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills </a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#insights">Course Insights </a>
               </li>
@@ -116,7 +138,15 @@
         </div>
       </nav>
     </header>
-    <main class="container" style="margin-top: 100px">
+    <main
+      data-bs-spy="scroll"
+      data-bs-target="#navbarCollapse"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="container scrollspy-example"
+      tabindex="0"
+      style="margin-top: 100px"
+    >
       <section id="about">
         <div class="row">
           <div class="col-lg-6">
@@ -155,6 +185,44 @@
           </div>
         </div>
       </section>
+
+      <section id="skills">
+        <div class="row">
+          <h2 class="text-underline text-center mb-5">Skills</h2>
+          <div class="col-12">
+            <ul class="row">
+              <li class="col-4 mb-4">Multitasking</li>
+
+              <li class="col-4 mb-4">Analytical</li>
+
+              <li class="col-4 mb-4">Attention to detail.</li>
+
+              <li class="col-4 mb-4">Problem -Solving</li>
+
+              <li class="col-4 mb-4">Excellent communication skills.</li>
+
+              <li class="col-4 mb-4">Microsoft office</li>
+
+              <li class="col-4 mb-4">Business Development</li>
+
+              <li class="col-4 mb-4">Leadership</li>
+
+              <li class="col-4 mb-4">Strategic Planning and organization.</li>
+
+              <li class="col-4 mb-4">Superior customer service delivery</li>
+
+              <li class="col-4 mb-4">Critical Thinking</li>
+
+              <li class="col-4 mb-4">Financial Analysis.</li>
+
+              <li class="col-4 mb-4">Adaptability</li>
+
+              <li class="col-4 mb-4">Time Management</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section id="insights">
         <div class="row">
           <h2 class="text-underline text-center mb-5">Course Insights</h2>
