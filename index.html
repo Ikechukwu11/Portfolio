@@ -1101,5 +1101,21 @@
       </section>
     </main>
     <footer></footer>
+    <script src="assets/js/jquerycmin.js"></script>
+    <script>
+    $(document).ready(function() {
+
+    $("a[href*=#]").click(function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+    });
+   
+   
+// document ready  
+});
+
+
+
+  </script>
   </body>
 </html>
